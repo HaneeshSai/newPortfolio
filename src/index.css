@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/gif.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    cursor: url("/cursor.png"), auto;
+    color: white;
+}
+
+.content-container {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.764);
+    flex: 1;
+    padding: 20px;
+}
+
+.shadow {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.305);
+}
+
+.bg-shadow {
+    box-shadow: 0px 0px 20px purple;
+}
